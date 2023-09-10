@@ -19,7 +19,7 @@ export class OrchestratorService {
     private readonly settingsService: SettingsService,
     private readonly reportService: ReportService,
   ) {}
-  async sendAllReports() {
+  async prepareData() {
     try {
       // get all companies
       const companies = this.getCompanies();
